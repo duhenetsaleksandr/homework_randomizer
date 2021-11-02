@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Randomizer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>Randomizer</h1>
+
+    <form action="#" class="range">
+        <div class="input-block">
+            <div class="range-wrapper">
+                <input class="range-value basic-field" type="number" id="min" placeholder="Enter the number" autocomplete="off">
+                <label for="min" class="label">Min</label>
+            </div>
+
+            <div class="range-wrapper">
+                <input class="range-value basic-field" type="number" id="max" placeholder="Enter the number" autocomplete="off">
+                <label for="max" class="label">Max</label>
+            </div>
+        </div>
+
+        <div class="btn-block">
+            <button class="btn generate" id="generate" title="Generate random number">Generate</button>
+
+            <div class="wrapper-info">
+                <span id="label-info" class="label">Generated number</span>
+                <p class="info basic-field" id="info"></p>
+            </div>
+
+            <button class="btn reset" id="reset" title="Clear all fields">Reset</button>
+        </div>
+    </form>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
